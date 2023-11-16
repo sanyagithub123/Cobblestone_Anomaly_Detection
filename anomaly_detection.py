@@ -4,7 +4,7 @@ from collections import deque
 window_size = 10  # Adjust the window size as needed
 data_stream = deque(maxlen=window_size)
 z_scores = []
-threshold = 2.5  # Set an appropriate threshold for anomaly detection
+threshold = 1.0  # Set an appropriate threshold for anomaly detection
 
 def calculate_z_score(value):
     mean = (sum(data_stream) )/ len(data_stream)
